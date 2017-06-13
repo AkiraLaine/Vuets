@@ -4,7 +4,7 @@
   "description": "A Vue, TypeScript ready boilerplate",
   "scripts": {
     "dev": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=prodction webpack"
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
     "vue": "^2.3.4"
