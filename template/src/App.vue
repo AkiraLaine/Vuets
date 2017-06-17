@@ -1,19 +1,30 @@
 <template>
   <div id='app'>
+    {{#plugins.vue-router}}
+    <router-view></router-view>
+    {{else}}
     <home></home>
+    {{/plugins.vue-router}}
   </div>
 </template>
 
 <script lang='ts'>
 import Vue from 'vue'
 import Component from 'vue-class-component'
+{{#plugins.vue-router}}
+{{else}}
 import Home from './components/Home'
+{{/plugins.vue-router}}
 
+{{#plugins.vue-router}}
+@Component
+{{else}}
 @Component({
   components: {
-    Intro
+    Home
   }
 })
+{{/plugins.vue-router}}
 export default class App extends Vue {
   // data
   appName : string = 'vuets'
