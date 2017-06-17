@@ -8,7 +8,7 @@ import router from './router'
 {{/plugins.vue-router}}
 {{#plugins.vuex}}
 import store from './store'
-{{/plugins.store}}
+{{/plugins.vuex}}
 
 {{#plugins.axios}}
 Vue.prototype.$http = axios
