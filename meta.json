@@ -39,6 +39,7 @@
     }
   },
   "filters": {
-    "src/router/**/*": "plugins['vue-router']"
+    "src/router/**/*": "plugins['vue-router']",
+    "src/store/**/*": "plugins['vuex']"
   }
 }

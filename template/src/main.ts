@@ -6,6 +6,9 @@ import axios from 'axios'
 {{#plugins.vue-router}}
 import router from './router'
 {{/plugins.vue-router}}
+{{#plugins.vuex}}
+import store from './store'
+{{/plugins.store}}
 
 {{#plugins.axios}}
 Vue.prototype.$http = axios
@@ -16,5 +19,8 @@ new Vue({
   {{#plugins.vue-router}}
   router,
   {{/plugins.vue-router}}
+  {{#plugins.vuex}}
+  store,
+  {{/plugins.vuex}}
   render: h => h(App)
 }).$mount('#app')
