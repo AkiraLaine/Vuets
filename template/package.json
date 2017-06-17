@@ -1,12 +1,21 @@
 {
-  "name": "vuets",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "A Vue, TypeScript ready boilerplate",
+  "description": "{{ description }}",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
+    {{#plugins.axios}}
+    "axios": "^2.16.2",
+    {{/plugins.axios}}
+    {{#plugins.vue-router}}
+    "vue-router": "^2.5.3",
+    {{/plugins.vue-router}}
+    {{#plugins.vuex}}
+    "vuex": "^2.3.1",
+    {{/plugins.vuex}}
     "vue": "^2.3.4"
   },
   "devDependencies": {
@@ -42,12 +51,10 @@
     "webpack-dev-server": "^2.4.5"
   },
   "keywords": [
-    "vue",
+    "vuejs",
+    "webpack",
     "typescript",
-    "boilerplate",
-    "vue-typescript",
-    "typescript-vue"
+    "boilerplate"
   ],
-  "author": "Akira Laine <akira_laine@outlook.com>",
-  "license": "ISC"
+  "license": "MIT"
 }

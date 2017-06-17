@@ -1,14 +1,13 @@
 <template>
   <div id='app'>
-    <h3>Welcome to {{ properName }}</h3>
-    <intro></intro>
+    <home></home>
   </div>
 </template>
 
 <script lang='ts'>
 import Vue from 'vue'
 import Component from 'vue-class-component'
-import Intro from './components/Intro'
+import Home from './components/Home'
 
 @Component({
   components: {

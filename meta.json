@@ -1,0 +1,41 @@
+{
+  "prompts": {
+    "name": {
+      "required": true,
+      "message": "Project name"
+    },
+    "description": {
+      "message": "Project description",
+      "default": "A Vuets project"
+    },
+    "plugins": {
+      "message": "What plugins do you want to use",
+      "type": "checkbox",
+      "choices": ["vue-router", "vuex", "axios"],
+      "default": ["vue-router", "vuex", "axios"]
+    },
+    "lint": {
+      "type": "confirm",
+      "message": "Use ESLint?",
+      "required": true,
+      "default": true
+    },
+    "lintConfig": {
+      "when": "lint",
+      "type": "list",
+      "message": "Which ESLint style do you want to use?",
+      "choices": [
+        {
+          "name": "Standard (https://github.com/feross/standard)",
+          "short": "Standard",
+          "value": "standard"
+        },
+        {
+          "name": "AirBNB (https://github.com/airbnb/javascript)",
+          "short": "AirBNB",
+          "value": "airbnb"
+        }
+      ]
+    }
+  }
+}

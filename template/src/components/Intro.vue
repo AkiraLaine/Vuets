@@ -1,6 +1,7 @@
 <template>
   <div>
-    Check me out
+    <h3>Welcome to {{ properName }}</h3>
+    This is the Home page
   </div>
 </template>
 
@@ -9,7 +10,7 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component
-export default class Intro extends Vue {
+export default class Home extends Vue {
 
 }
 </script>

@@ -5,7 +5,11 @@ A Vue, TypeScript ready boilerplate using class-style components
 
 *Usage*
 ```bash
-git clone https://github.com/AkiraLaine/vuets.git <PROJECT_NAME>
+# Download vue-cli and Vuets template
+npm i -g vue-cli
+vue init akiralaine/vuets <PROJECT_NAME>
+
+# Install dependencies
 cd <PROJECT_NAME>
 npm i (or yarn)
 npm run dev (or yarn run dev)
