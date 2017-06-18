@@ -33,13 +33,14 @@
         {
           "name": "AirBNB (https://github.com/airbnb/javascript)",
           "short": "AirBNB",
-          "value": "airbnb"
+          "value": "airbnb-base"
         }
       ]
     }
   },
   "filters": {
     "src/router/**/*": "plugins['vue-router']",
-    "src/store/**/*": "plugins['vuex']"
+    "src/store/**/*": "plugins['vuex']",
+    ".eslintrc": "lint"
   }
 }

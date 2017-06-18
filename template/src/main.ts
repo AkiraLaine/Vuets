@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue'{{#if_eq lintConfig "airnbn"}};{{/if_eq}}
 import App from './App'
 {{#plugins.axios}}
 import axios from 'axios'

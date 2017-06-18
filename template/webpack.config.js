@@ -19,6 +19,7 @@ const config = {
   },
   module: { 
     rules: [
+      {{#lint}}
       {
         test: /\.(js|vue|ts)$/,
         enforce: 'pre',
@@ -27,6 +28,7 @@ const config = {
           formatter: require('eslint-friendly-formatter')
         }
       },
+      {{/lint}}
       {
         test: /\.js$/,
         use: 'babel-loader'

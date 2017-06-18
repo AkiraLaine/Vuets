@@ -1,8 +1,16 @@
 {
-  "extends": "standard",
+  "extends": "{{ lintConfig }}",
   "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["html"]
+  "plugins": ["html"],
+  "rules": {
+    {{#if_eq lintConfig "airbnb-base"}}
+    "import/extensions": 0,
+    "import/no-unresolved": 0,
+    "linebreak-style": 0,
+    "comma-dangle": 0
+    {{/if_eq}}
+  }
 }
