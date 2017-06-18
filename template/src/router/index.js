@@ -1,9 +1,9 @@
-import Vue from 'vue'{{#if_eq lintConfig "airbnb-base"}};{{/if_eq}}
-import Router from 'vue-router'{{#if_eq lintConfig "airbnb-base"}};{{/if_eq}}
+import Vue from 'vue'
+import Router from 'vue-router'
 
-import Home from './components/Home'{{#if_eq lintConfig "airbnb-base"}};{{/if_eq}}
+import Home from '../components/Home'
 
-Vue.use(Router){{#if_eq lintConfig "airbnb-base"}};{{/if_eq}}
+Vue.use(Router)
 
 export default new Router({
   routes: [
@@ -13,4 +13,4 @@ export default new Router({
       component: Home
     }
   ]
-}){{#if_eq lintConfig "airbnb-base"}};{{/if_eq}}
+})

@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "{{ description }}",
   "scripts": {
+    {{#lint}}
+    "lint": "eslint --ext .js,.vue,.ts src",
+    "lint:fix": "eslint --ext .js,.vue,.ts src --fix",
+    "postinstall": "npm run lint:fix",
+    {{/lint}}
     "dev": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack",
-    "lint": "eslint src"
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "dependencies": {
     {{#plugins.axios}}
-    "axios": "^2.16.2",
+    "axios": "^0.16.2",
     {{/plugins.axios}}
     {{#plugins.vue-router}}
     "vue-router": "^2.5.3",
@@ -17,7 +21,8 @@
     {{#plugins.vuex}}
     "vuex": "^2.3.1",
     {{/plugins.vuex}}
-    "vue": "^2.3.4"
+    "vue": "^2.3.4",
+    "vue-class-component": "^5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
@@ -56,7 +61,6 @@
     "style-loader": "^0.18.2",
     "ts-loader": "^2.1.0",
     "typescript": "^2.3.4",
-    "vue-class-component": "^5.0.1",
     "vue-loader": "^12.2.1",
     "vue-template-compiler": "^2.3.4",
     "webpack": "^2.6.1",

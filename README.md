@@ -1,7 +1,5 @@
 # Vuets
-A Vue, TypeScript ready boilerplate using class-style components 
-
-**Current under development**
+A Vue, TypeScript ready boilerplate using class-style components
 
 *Usage*
 ```bash
@@ -11,8 +9,8 @@ vue init akiralaine/vuets <PROJECT_NAME>
 
 # Install dependencies
 cd <PROJECT_NAME>
-npm i (or yarn)
-npm run dev (or yarn run dev)
+yarn (or npm i)
+yarn run dev (or npm run dev)
 ```
 
 ### What's a class-style component?
